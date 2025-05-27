@@ -29,14 +29,14 @@ medium_font = pygame.font.SysFont("Arial", 30)
 
 # Load images
 try:
-    BG = pygame.transform.scale(pygame.image.load("bg.png"), (WIDTH, HEIGHT))
-    SPACESHIP_IMAGE = pygame.image.load("spaceship.png")
+    BG = pygame.transform.scale(pygame.image.load("assets/bg.png"), (WIDTH, HEIGHT))
+    SPACESHIP_IMAGE = pygame.image.load("assets/spaceship.png")
     SPACESHIP = pygame.transform.scale(SPACESHIP_IMAGE, (40, 60))
-    LEVEL2_BG = pygame.transform.scale(pygame.image.load("space1.jpg"), (WIDTH, HEIGHT))
-    BOT_IMAGE = pygame.transform.scale(pygame.image.load("bot.png"), (50, 50))
+    LEVEL2_BG = pygame.transform.scale(pygame.image.load("assets/space1.jpg"), (WIDTH, HEIGHT))
+    BOT_IMAGE = pygame.transform.scale(pygame.image.load("assets/bot.png"), (50, 50))
     # Level 3 assets
-    LEVEL3_BG = pygame.transform.scale(pygame.image.load("2BG.jpg"), (WIDTH, HEIGHT))
-    RED_SPACESHIP_IMAGE = pygame.image.load("Red_space_ship.png")
+    LEVEL3_BG = pygame.transform.scale(pygame.image.load("assets/2BG.jpg"), (WIDTH, HEIGHT))
+    RED_SPACESHIP_IMAGE = pygame.image.load("assets/Red_space_ship.png")
     RED_SPACESHIP = pygame.transform.scale(RED_SPACESHIP_IMAGE, (40, 60))
 except Exception as e:
     print("Error loading images:", e)
@@ -572,4 +572,3 @@ while running:
 
     pygame.display.flip()
     clock.tick(60)
-
